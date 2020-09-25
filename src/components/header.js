@@ -14,7 +14,14 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
+      className="row align-top"
     >
+      <img
+        alt=""
+        src="https://source.unsplash.com/SOUXjk2v2VU/50x50"
+        className="d-inline-block align-top"
+        style={{ marginRight: "10px"}}
+      />
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"

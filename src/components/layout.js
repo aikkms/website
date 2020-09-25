@@ -28,7 +28,7 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
-        <Container fluid className="px-0 main">
+        <Container fluid className="px-0 main" style={{marginBottom : "40px"}}>
           <Row noGutters className="justify-content-center">
             <Col>
               <Header siteTitle={data.site.siteMetadata.title} />
@@ -48,9 +48,9 @@ const Layout = ({ children, pageInfo }) => (
             <Col className="footer-col">
               <footer>
                 <span>
-                  © {new Date().getFullYear()}, Built with
+                  {/* © {new Date().getFullYear()}, Built with
                   {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
+                  <a href="https://www.gatsbyjs.org">Gatsby</a> */}
                 </span>
               </footer>
             </Col>

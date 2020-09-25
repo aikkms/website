@@ -1,27 +1,37 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import {
+  Navbar, Nav,
+  //Form, FormControl, Button 
+} from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
+
   return (
     <>
-      <Navbar variant="dark" expand="lg" id="site-navbar">
+      <Navbar variant="dark" expand="lg" id="site-navbar" style={{ backgroundColor: "rgb(150, 0, 0)" }}>
         {/* <Container> */}
         <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">Gatsby React Bootstrap</Navbar.Brand>
+          <img
+            alt=""
+            src="https://source.unsplash.com/SOUXjk2v2VU/30x30"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
+          <Navbar.Brand as="span">AIKKMS</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                Page 2
+            <Link to="/about" className="link-no-style">
+              <Nav.Link as="span" eventKey="about">
+                About
               </Nav.Link>
             </Link>
           </Nav>
-          <Nav className="ml-auto">
+          {/* <Nav className="ml-auto">
             <Form inline onSubmit={e => e.preventDefault()}>
               <Form.Group>
                 <FormControl
@@ -32,7 +42,7 @@ const CustomNavbar = ({ pageInfo }) => {
               </Form.Group>
               <Button>Fake Button</Button>
             </Form>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
         {/* </Container> */}
       </Navbar>
