@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import logo from "../images/logo-icon.png"
+
 import {
   Navbar, Nav,
   //Form, FormControl, Button 
@@ -15,7 +17,7 @@ const CustomNavbar = ({ pageInfo }) => {
         <Link to="/" className="link-no-style">
           <img
             alt=""
-            src="https://source.unsplash.com/SOUXjk2v2VU/30x30"
+            src={logo}
             width="30"
             height="30"
             className="d-inline-block align-top"
